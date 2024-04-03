@@ -1,7 +1,13 @@
 public class App {
     public void emitirboleto(){
-        Boleto variavelBoleto = new Boleto();
-        variavelBoleto.emitirboleto();
+        Boleto variavelBoleto = new Boleto(); //Criando o objeto variavelBoleto
+
+        variavelBoleto.valor = 1000;
+        variavelBoleto.vencimento = "Hoje";
+        variavelBoleto.codigoDeBarra = "212132334";
+
+        variavelBoleto.emitirboleto(variavelBoleto); //Enviando a variavelBoleto para o método emitirboleto da classe boleto
+
     }
 }
 
