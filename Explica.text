@@ -10,4 +10,5 @@
  Se o método está na classe met, precisamos criar um objeto que se referencia a ele dentro da nossa classe:
  met objmet = new met();
  objmet.método();
+ * Construtores são métodos que constroem/criam objetos da sua classe com parâmetros intrínsecos a eles
 */
