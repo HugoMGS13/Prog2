@@ -1,7 +1,8 @@
 public class impressora {
     public void imprimir(Boleto b) /*Recebendo uma variável b do tipo Boleto*/{
-        b.valor = 100; //Não pode fazer isso
-        System.out.println("Imprimir");
+        System.out.println("Impresso. Código de barras: " + b.getCodigodebarras() + " Vencimento: " + b.getVencimento() +
+        " Valor: " + b.getValor());
     }
-    
+
 }
+
