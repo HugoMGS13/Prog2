@@ -1,27 +1,32 @@
 public class ContaBancaria {
     private int numeroConta;
-    public Cliente hugo;
-    private float saldo;
-    public ContaBancaria(Cliente client){
-        this.hugo = client;
-    }
-    public ContaBancaria(){     
-    }
-    public void depositar(){
-        System.out.println("Depositando");
-    }
-    public void sacar(){}
+    private double saldo;
+    private Cliente cliente;
 
+    public ContaBancaria(Cliente cliente, int numeroConta, double saldo){
+        this.cliente = cliente;
+        this.numeroConta = numeroConta;
+        this.saldo = saldo;
+    }
+
+    public ContaBancaria(){
+        /**
+         * Construtor vazio para as subclasses, que não possuírem um construtor próprio, utilizarem
+         */
+    }
+
+    public void depositar(){}
+    public void sacar(){}
     public int getNumeroConta() {
         return numeroConta;
     }
-    public float getSaldo() {
+    public double getSaldo() {
         return saldo;
     }
     public void setNumeroConta(int numeroConta) {
         this.numeroConta = numeroConta;
     }
-    public void setSaldo(float saldo) {
+    public void setSaldo(double saldo) {
         this.saldo = saldo;
     }
 }
